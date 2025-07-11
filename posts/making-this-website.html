@@ -62,7 +62,6 @@
     .section-title {
       font-size: 32px;
       display: inline-block;
-      padding: 10px 20px;
       margin-bottom: 0px;
     }
 
@@ -77,6 +76,15 @@
       height: 60px;
       margin-right: 20px;
     }
+
+    .subheader {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        padding-bottom: 0rem;
+    }
+
 
     .post-content {
       flex-grow: 1;
@@ -137,40 +145,80 @@
       color: inherit;
     }
 
+    .custom-table {
+  border-collapse: collapse;
+  width: auto;
+  margin: 2rem;
+}
+
+.custom-cell {
+  border: 1px solid #000;
+  padding: 8px;
+  min-width: 100px;
+  text-align: left;
+}
+
+
   </style>
 </head>
 <body>
 
   <header>
     <div class="logo">
-      <img src="images/globe.png" alt="logo" style="height:7rem ; width: 7rem;">
+      <img src="/images/globe.png" alt="logo" style="height:7rem ; width: 7rem;">
       <div>
         <a class="link" href="/"> <div class="title">NIKHITA MISTRY</div> </a>
         <div class="subtitle">a collection of my thoughts and feelings</div>
-</p>
       </div>
     </div>
     <nav>
-      <a href="blog.html">BLOG</a><a href="about.html">ABOUT</a>
+      <a href="/blog.html">BLOG</a><a href="/about.html">ABOUT</a>
     </nav>
   </header>
-  <div class="section-title">RECENT STUFF</div>
+  <div style="margin-left: 200px; margin-right: 200px;">
+    <div class="section-title">WHY AND HOW I MADE THIS WEBSITE</div>
 
-  <div>
-    <a class="post link" href="/posts/making-this-website.html">
-    <img src="images/miffy.png" alt="bunny image">
-    <div class="post-content">
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
-          <div class="post-title">why i made a website</div>
-          <div class="post-date">june 2025</div>
-        </div>
-      <div class="post-line"></div>
-      <div class="post-subtitle">new blog who dis</div>
-    </div>
-    </a>
-  </div>
+<p class="paragraph">let me set the scene:</p>
 
-  <footer style="position: absolute; bottom: 0; width: 97%;">
+<ul>
+  <li>27 years old and just moved to melbourne</li>
+  <li>a bit of time on my hands</li>
+  <li>an opportunity to upskill</li>
+</ul>
+
+<p class="paragraph">the first time i touched html was trying to find a tumblr theme in 2013, and the last time (before this website) was in my 2016 info101 class at university.</p>
+
+<p class="paragraph">this extensive range of experience was no match for making this website in 2025, however luckily AI now exists and i have a really helpful boyfriend : )</p>
+
+<img src="/images/miffy.png" alt="unnamed.jpg">
+
+<p class="paragraph">i’m hoping this website can give me an outlet for my writings, but also showcase my skills in marketing across my personal and professional career. this is a space i want to be successful in and i know the first step is to get as much experience as possible. so here it is!</p>
+
+<p class="subheader">hello friends</p>
+
+<p class="paragraph">i used figma to help conceptulise and design this website, then i used chatgpt to assist with writing html that i could upload onto github. my skillset in figma is definitely still introductory, however i really love the range of functionality it has.</p>
+
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th class="custom-cell">hello</th>
+      <th class="custom-cell">i am</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="custom-cell">nikhita</td>
+      <td class="custom-cell">mistry</td>
+    </tr>
+    <tr>
+      <td class="custom-cell">meow</td>
+      <td class="custom-cell">woof!</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+  <footer>
     <div class="footer-content">
       <div class="socials">★ SOCIALS</div>
       <div class="footer-line"></div>

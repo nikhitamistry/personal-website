@@ -21,13 +21,21 @@
     header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: center; /* Aligns centers of logo/title and nav/buttons */
       margin-bottom: 40px;
     }
 
     .logo {
       display: flex;
-      align-items: center;
+      align-items: center; /* Vertically center logo and title */
+    }
+
+    .logo > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Vertically center title and subtitle */
+      height: 100%;
+      margin-top: 0;
     }
 
     .logo img {
@@ -39,11 +47,15 @@
     .title {
       font-size: 45px;
       font-weight: bold;
+      margin-bottom: 4px; /* Smaller gap below the title */
+      display: flex;
+      align-items: center;
+      height: auto; /* Remove fixed height for natural spacing */
     }
 
     .subtitle {
       font-size: 16px;
-      margin-top: 5px;
+      margin-top: 0; /* Remove extra gap above subtitle */
     }
 
     nav a {
@@ -53,9 +65,21 @@
       text-decoration: none;
       color: #D03B00;
       margin-left: 0;
+      border-radius: 12px;
+    }
+
+    nav a + a {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
     }
 
     nav a:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
       border-right: none;
     }
 
@@ -73,8 +97,8 @@
     }
 
     .post img {
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
       margin-right: 20px;
     }
 
@@ -138,7 +162,6 @@
     }
 
   </style>
-</head>
 <body>
 
   <header>
@@ -147,7 +170,6 @@
       <div>
         <a class="link" href="/"> <div class="title">NIKHITA MISTRY</div> </a>
         <div class="subtitle">a collection of my thoughts and feelings</div>
-</p>
       </div>
     </div>
     <nav>
@@ -158,14 +180,14 @@
 
   <div>
     <a class="post link" href="/posts/making-this-website.html">
-    <img src="images/miffy.png" alt="bunny image">
+    <img src="images/post-images/making-this-website.png">
     <div class="post-content">
         <div style="display: flex; flex-direction: row; justify-content: space-between;">
           <div class="post-title">why i made a website</div>
-          <div class="post-date">june 2025</div>
+          <div class="post-date">july 2025</div>
         </div>
       <div class="post-line"></div>
-      <div class="post-subtitle">new blog who dis</div>
+      <div class="post-subtitle">setting the scene</div>
     </div>
     </a>
   </div>

@@ -53,9 +53,21 @@
       text-decoration: none;
       color: #D03B00;
       margin-left: 0;
+      border-radius: 12px;
+    }
+
+    nav a + a {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
     }
 
     nav a:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
       border-right: none;
     }
 
@@ -158,7 +170,21 @@
   text-align: left;
 }
 
+.blogpost-img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 2px solid #D03B00; /* Added border */
+    border-radius: 8px;         /* Optional: rounded corners */
+  }
 
+  .no-underline {
+    text-decoration: none;
+    color: #D03B00;
+    font-weight: bold;
+  }
   </style>
 </head>
 <body>
@@ -188,34 +214,28 @@
 
 <p class="paragraph">the first time i touched html was trying to find a tumblr theme in 2013, and the last time (before this website) was in my 2016 info101 class at university.</p>
 
-<p class="paragraph">this extensive range of experience was no match for making this website in 2025, however luckily AI now exists and i have a really helpful boyfriend : )</p>
+<p class="paragraph">i’m hoping this website can give me an outlet for my thoughts, but also showcase my skills.</p>
 
-<img src="/images/miffy.png" alt="unnamed.jpg">
+<h1>the design</h1>
 
-<p class="paragraph">i’m hoping this website can give me an outlet for my writings, but also showcase my skills in marketing across my personal and professional career. this is a space i want to be successful in and i know the first step is to get as much experience as possible. so here it is!</p>
+<p class="paragraph">i used figma to help conceptualise and design the website. here’s a screenshot of how i wanted the front page to look (with some placeholder content).</p>
 
-<p class="subheader">hello friends</p>
+<p class="paragraph">here it is in figma:</p>
 
-<p class="paragraph">i used figma to help conceptulise and design this website, then i used chatgpt to assist with writing html that i could upload onto github. my skillset in figma is definitely still introductory, however i really love the range of functionality it has.</p>
+<img src="/images/screenshot-figma.png" class="blogpost-img">
 
-<table class="custom-table">
-  <thead>
-    <tr>
-      <th class="custom-cell">hello</th>
-      <th class="custom-cell">i am</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="custom-cell">nikhita</td>
-      <td class="custom-cell">mistry</td>
-    </tr>
-    <tr>
-      <td class="custom-cell">meow</td>
-      <td class="custom-cell">woof!</td>
-    </tr>
-  </tbody>
-</table>
+<h1>the doing</h1>
+<p class="paragraph">i used my bffl ai to turn my mock up into code. it tried it’s best, but it wasn’t looking great. github has a helpful viewing pane, so i could see what it was looking like.</p>
+
+<img src="/images/screenshot-blog.png" class="blogpost-img">
+
+<h1>the outcome</h1>
+
+<p class="paragraph">and <a href="http://nikhitamistry.com" class="no-underline">nikhitamistry.com</a> is live!!</p>
+
+<p class="paragraph">overall, for my first proper website this was definitely a steep learning curve. now, every time i enter a website i have newfound understanding and appreciation for the work that went into it.</p>
+
+<p class="paragraph">being totally honest, it’s <em>so</em> confronting posting a blog for anyone to read (and judge). you have no idea how may times i’ve re written this sentence and looked at my website not knowing what changes to make. coming from basically no background in coding or web design, i’m proud of its first version.</p>
 </div>
 
   <footer>
